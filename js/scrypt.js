@@ -1,3 +1,17 @@
+// Показываем загруженный контент
+window.onload = function () {
+    let hideElement = document.querySelector('.hide')
+    let loadingPage = document.querySelector('.loader')
+
+    if (hideElement) {
+        hideElement.classList.remove('hide')
+    }
+
+    if (loadingPage) {
+        loadingPage.classList.add('hide')
+    }
+}
+
 
 const body = document.querySelector('body')
 const header = document.querySelector('header')
